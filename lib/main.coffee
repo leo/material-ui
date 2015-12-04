@@ -33,7 +33,6 @@ module.exports =
 
     # Initialize
     setFontSize(atom.config.get('one-dark-ui.fontSize'))
-    setLayoutMode(atom.config.get('one-dark-ui.layoutMode'))
 
   deactivate: ->
     unsetFontSize()
@@ -49,11 +48,3 @@ setFontSize = (currentFontSize) ->
 
 unsetFontSize = ->
   root.style.fontSize = ''
-
-
-# Layout Mode -----------------------
-setLayoutMode = (layoutMode) ->
-  root.setAttribute('theme-one-dark-ui-layoutmode', layoutMode.toLowerCase())
-
-unsetLayoutMode = ->
-  root.removeAttribute('theme-one-dark-ui-layoutmode')
