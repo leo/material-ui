@@ -16,8 +16,6 @@
     display: none;
   }
 
-  // Tab ----------------------
-
   .tab {
     position: relative;
     top: 0;
@@ -30,12 +28,16 @@
     padding: 0;
     margin: 0;
     background-clip: content-box;
+    transition: 0.3s ease;
+
     &.active {
-      border-radius: @component-border-radius*1.75 @component-border-radius*1.75 0 0;
-      background-color: @level-3-color !important;
+      border-radius: 0;
+      background-color: @level-3-color;
     }
 
-    // Cover ----------------------
+    &:hover {
+      background-color: #27373C;
+    }
 
     &::after {
       content: "";
@@ -56,9 +58,6 @@
       transition: none;
     }
 
-
-    // Title ----------------------
-
     .title {
       position: relative;
       height: inherit;
@@ -67,9 +66,9 @@
       text-overflow: clip;
       margin-left: 20px;
       -webkit-mask: linear-gradient( to left, hsla(0,0%,0%,0), hsla(0,0%,0%,1) 1em) no-repeat;
-      background-color: @tab-background-color;
       background-clip: content-box;
       backface-visibility: hidden;
+      font-size: 11px;
 
       &:before {
         display: none;
@@ -82,11 +81,8 @@
     }
 
     &.active .title {
-      background-color: @level-3-color !important;
+      background-color: transparent !important;
     }
-
-
-    // Close icon ----------------------
 
     .close-icon {
       top: 0;
@@ -98,70 +94,70 @@
       text-align: center;
       transform: scale(0);
       transition: transform .08s;
+
       &:hover {
         opacity: .7;
       }
+
       &:active {
         opacity: .4;
       }
+
       &::before {
         font-size: inherit;
       }
+
     }
+
     &:hover .close-icon {
       transform: scale(1);
       transition-duration: .16s;
     }
+
   }
-
-
-  // Tab sizing ----------------------
 
   .tab,
   .tab.active {
     flex: 1;
   }
 
-
-  // keep tabs same size when active ----------------------
-
   .tab,
   .tab.active {
     padding-right: 0;
+
     .title {
       padding: 0;
     }
+
   }
-
-
-  // Active ----------------------
 
   .tab.active {
     color: @tab-text-color-active;
   }
 
-  // Tab seperator ----------------------
-
   .tab {
-    border-width: 0 0 0 1px;
-    border-image: linear-gradient(@tab-bar-background-color, @base-border-color 1em) 0 0 0 1 stretch;
+    border-width: 0;
+    border-image: none;
+
     &:first-child {
       border-width: 0;
     }
+
   }
+
   .tab.active,
   .tab.active + .tab {
     border-image: linear-gradient(transparent, transparent) 0 0 0 1 stretch;
   }
 
-
-  // Modified ----------------------
   .tab.modified {
+
     .close-icon {
       color: @text-color-info;
       border: none;
       border-bottom: @tab-border-size solid transparent;
     }
+
     &:not(:hover) .close-icon {
       right: 0;
       top: 0;
@@ -171,22 +167,24 @@
       border-bottom: @tab-border-size solid transparent;
       border-radius: 0;
       transform: scale(1);
+
       &::before {
         content: "\f052";
         display: inline-block;
       }
+
     }
+
   }
-
-
-  // Dragging ----------------------
 
   .tab.is-dragging {
     opacity: .5;
+
     .close-icon,
     &:before {
       visibility: hidden;
     }
+
   }
 
   .placeholder {
@@ -194,6 +192,7 @@
     height: @ui-tab-height;
     background: @base-accent-color;
     pointer-events: none;
+
     &:after {
       top: @ui-tab-height/2;
       width: 10px;
@@ -212,15 +211,15 @@
         margin-left: -10px;
         border-color: transparent @base-accent-color transparent transparent;
       }
+
     }
+
   }
+
 }
 
-
-// Active pane marker --------------
-
 .tab-bar .tab::before {
-  content: "";
+  content: '';
   position: absolute;
   pointer-events: none;
   z-index: 2;
@@ -238,27 +237,11 @@
   .theme-one-light-ui & {
     left: 0;
   }
+
 }
 
 atom-pane.active .tab.active:before {
   opacity: 1;
   transform: scaleY(1);
   transition: opacity .16s, transform .32s cubic-bezier(0,.6,.2,1);
-}
-
-
-// Custom tabs --------------
-
-.tab-bar .tab.active {
-  &[data-type$="Editor"],
-  &[data-type="MarkdownPreviewView"] {
-    color: @tab-text-color-editor;
-    background-color: @tab-background-color-editor;
-    &::after {
-      border-bottom-color: transparent;
-    }
-    .title {
-      background-color: @tab-background-color-editor;
-    }
-  }
 }
