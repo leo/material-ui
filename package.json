@@ -1,15 +1,17 @@
 {
   "name": "material-ui",
   "theme": "ui",
-  "version": "1.1.7",
-  "description": "Atom One dark UI theme",
+  "version": "0.1.0",
+  "description": "A modern UI based on Google's Material Design Guide",
   "keywords": [
     "dark",
     "adaptive",
-    "ui"
+    "ui",
+    "material",
+    "design"
   ],
   "license": "MIT",
-  "repository": "https://github.com/atom/one-dark-ui",
+  "repository": "https://github.com/leo/material-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"
