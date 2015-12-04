@@ -2,7 +2,7 @@
   "name": "material-ui",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "A modern UI based on Google's Material Design Guide",
+  "description": "A modern UI based on Google's Material design guide",
   "keywords": [
     "dark",
     "adaptive",
@@ -14,7 +14,7 @@
   "repository": "https://github.com/leo/material-ui",
   "main": "lib/main",
   "engines": {
-    "atom": ">0.40.0"
+    "atom": ">1.2.0"
   },
   "devDependencies": {
     "coffeelint": "^1.9.7"
