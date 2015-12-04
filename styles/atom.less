@@ -16,18 +16,19 @@ atom-workspace {
 }
 
 .platform-darwin {
+
 	atom-workspace.theme-one-light-ui {
 	  border-top: 1px solid darken(@base-border-color, 20%);
 	}
+
 	&.is-blurred atom-workspace.theme-one-light-ui {
 	  border-top-color: @base-border-color;
 	}
+
 }
 
-
-// Scrollbars ------------------------------------
-
 .scrollbars-visible-always {
+
 	/deep/ ::-webkit-scrollbar {
 		width: 10px;
 		height: 10px;
@@ -61,20 +62,24 @@ atom-workspace {
 	}
 
 	atom-text-editor {
+
 		/deep/ ::-webkit-scrollbar-track {
 			background: @scrollbar-background-color-editor;
 		}
+
 		/deep/ ::-webkit-scrollbar-corner {
 			background: @scrollbar-background-color-editor;
 		}
+
 		/deep/ ::-webkit-scrollbar-thumb {
 			border-color: @scrollbar-background-color-editor;
 			background: @scrollbar-color-editor;
 		}
+
 	}
+
 }
 
-// TODO: Move to a better place, not sure where it gets used
 .caret {
   border-top: 5px solid #fff;
   margin-top: -1px;

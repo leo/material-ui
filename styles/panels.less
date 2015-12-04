@@ -1,8 +1,10 @@
 .panel {
+
   &.bordered {
     border: 1px solid @base-border-color;
     border-radius: @component-border-radius;
   }
+
 }
 
 atom-panel {
@@ -14,13 +16,16 @@ atom-panel {
   position: relative;
   background-color: @inset-panel-background-color;
   border-radius: @component-border-radius;
+
   &.bordered {
     border: 1px solid @base-border-color;
     border-radius: @component-border-radius;
   }
+
   & .panel-heading {
     border-color: @inset-panel-border-color;
   }
+
 }
 
 .panel-heading {
@@ -31,11 +36,14 @@ atom-panel {
   .btn {
     padding-left: 8px;
     padding-right: 8px;
+
     .btn-default(
       lighten(@button-background-color, 10%),
       lighten(@button-background-color-hover, 10%),
       lighten(@button-background-color-selected, 10%),
       lighten(@text-color, 10%)
     );
+
   }
+
 }
