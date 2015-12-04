@@ -3,10 +3,11 @@
 .tree-view {
   font-size: @ui-size;
   background: @tree-view-background-color;
+  padding-left: 25px;
 
   .project-root.project-root {
     &:first-child {
-      padding-top: @ui-padding-pane;
+      padding-top: 20px;
     }
     &:before {
       height: @ui-tab-height;
@@ -86,4 +87,24 @@
   opacity: 1;
   transform: scaleY(1);
   transition: opacity .16s, transform .32s cubic-bezier(0,.6,.2,1);
+}
+
+.list-tree {
+
+  .icon-file-directory {
+    font-weight: 600;
+  }
+
+  &.has-collapsable-children .list-nested-item {
+
+    &, &.collapsed {
+
+      & > .list-item::before {
+        display: none;
+      }
+
+    }
+
+  }
+
 }
