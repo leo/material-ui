@@ -156,13 +156,14 @@
 
   .entry.expanded > .entries {
     -webkit-animation: tree-view-expanded .3s ease;
+    z-index: 10;
   }
 
   @keyframes tree-view-expanded {
 
     0% {
       opacity: 0;
-      margin-top: -100%;
+      margin-top: -10px;
     }
 
     100% {
