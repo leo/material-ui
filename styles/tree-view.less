@@ -80,6 +80,18 @@
 
   .icon-file-directory {
     font-weight: 600;
+
+    &:before {
+      content: '\E2C7';
+      font-family: 'Material Icons';
+      display: inline-block;
+      font-size: 19.2px;
+      vertical-align: middle;
+      -webkit-font-smoothing: antialiased;
+      top: -2px;
+      margin-right: 9px;
+    }
+
   }
 
   &.has-collapsable-children .list-nested-item {
@@ -96,14 +108,35 @@
 
 }
 
-.tree-view:focus::before {
-  opacity: 1;
-  transform: scaleY(1);
-  transition: opacity .16s, transform .32s cubic-bezier(0,.6,.2,1);
-}
+.list-tree {
 
-.list-tree .file .icon {
-  font-size: 11px;
-  letter-spacing: 0.02em;
-  color: #607B82;
+  .selected {
+    color: inherit;
+  }
+
+  .expanded {
+    color: #A9BDBE;
+  }
+
+  .list-item {
+
+    &.file {
+      font-size: 11.5px;
+      letter-spacing: 0.02em;
+      color: #607B82;
+      padding-top: 1px;
+      padding-bottom: 1px;
+
+      &.selected {
+        color: #A9BDBE;
+      }
+
+    }
+
+  }
+
+  .icon:hover {
+    color: #A9BDBE;
+  }
+
 }
