@@ -87,13 +87,11 @@
     }
 
     .close-icon {
-      top: 0;
       right: 0;
+      height: auto;
       z-index: 2;
-      padding: 0 @tab-padding/1.25;
-      height: 45px;
-      line-height: 45px;
       text-align: center;
+      line-height: normal;
 
       &:hover {
         opacity: .7;
@@ -136,6 +134,27 @@
 
     &:first-child {
       border-width: 0;
+    }
+
+    .close-icon {
+      top: 13px;
+      right: 10px;
+
+      &:before {
+        content: '\E5CD';
+        font-family: 'Material Icons';
+        display: inline-block;
+        font-size: 13px;
+        -webkit-font-smoothing: antialiased;
+        line-height: 21px;
+        width: 20px;
+      }
+
+      &:hover {
+        opacity: 1;
+        color: #fff;
+      }
+
     }
 
   }
