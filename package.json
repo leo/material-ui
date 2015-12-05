@@ -11,8 +11,5 @@
   "repository": "https://github.com/leo/material-ui",
   "engines": {
     "atom": ">1.2.0"
-  },
-  "devDependencies": {
-    "coffeelint": "^1.9.7"
   }
 }
