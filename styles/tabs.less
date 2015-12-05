@@ -138,13 +138,13 @@
 
     .close-icon {
       top: 13px;
-      right: 10px;
+      right: 7px;
 
       &:before {
         content: '\E5CD';
         font-family: 'Material Icons';
         display: inline-block;
-        font-size: 13px;
+        font-size: 11px;
         -webkit-font-smoothing: auto;
         line-height: 21px;
         width: 20px;
@@ -166,27 +166,28 @@
 
   .tab.modified {
 
-    .close-icon {
-      color: @text-color-info;
-      border: none;
-      border-bottom: @tab-border-size solid transparent;
-    }
-
-    &:not(:hover) .close-icon {
-      right: 0;
-      top: 0;
+    &:not(.overwrite) .close-icon {
       width: initial;
-      height: @ui-tab-height;
-      border: none;
-      border-bottom: @tab-border-size solid transparent;
-      border-radius: 0;
+      top: 13px;
+      right: 7px;
       transform: scale(1);
+      border: none;
+      border-radius: 0;
+      border-bottom: @tab-border-size solid transparent;
 
       &::before {
-        content: "\f052";
+        content: '\E150';
         display: inline-block;
       }
 
+      &:hover:before {
+        content: '\E5CD';
+      }
+
+    }
+
+    &:hover .close-icon {
+      color: #fff;
     }
 
   }
