@@ -1,48 +1,17 @@
-## One dark UI theme [![Build Status](https://travis-ci.org/atom/one-dark-ui.svg?branch=master)](https://travis-ci.org/atom/one-dark-ui)
+## Material UI
 
-A dark UI theme that adjusts to most Syntax themes.
-
-![one-dark-ui](https://cloud.githubusercontent.com/assets/378023/6979859/96e416e8-da24-11e4-995c-00dcd84c276d.png)
-
-> The font used in the screenshots is [Fira Mono](https://github.com/mozilla/Fira). Icons by [file-icons](https://atom.io/packages/file-icons).
-
-### Combine with other Syntax themes
-
-There is a matching [Syntax theme](https://atom.io/themes/one-dark-syntax), but most other Syntax themes work fine as well.
-
-![one-dark-ui + sepia](https://cloud.githubusercontent.com/assets/378023/6979865/af2d59da-da24-11e4-8ab6-974c50534b86.png)
-> One dark + [Sepia](https://atom.io/themes/sepia-syntax)
-
-![one-dark-ui chester](https://cloud.githubusercontent.com/assets/378023/6979876/cd0fca64-da24-11e4-9006-4f7e1ff80cad.png)
-> One dark + [Chester](https://atom.io/themes/chester-atom-syntax)
+This theme converts Atom into a good looking and minimal editor without unnecessary clutter. Although it was inspired by Google's Material design, it's not completely based on the same. There are some places in which I've decided to make some decisions by my own to make the design look less haptic.
 
 ### Install
 
-This theme is installed by default with Atom and can be activated by going to the __Settings > Themes__ section and selecting "One Dark" from the __UI Themes__ drop-down menu.
+Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme".
 
-### Settings
 
-In the theme settings you can switch between 3 __Layout Modes__:
+### Icon suggestion
 
-1. `Auto` (default) - In Auto mode, the UI and font size will automatically change based on the window size.
-2. `Compact` - The UI stays compact to leave more space for the editor.
-3. `Spacious` - The UI is expanded, giving some breathing room.
+If you don't like Atom's default dock icon, there are many different alternatives out there from which you can choose one that you like more.
 
-As well as change the __Font Size__ to scale the whole UI up or down.
+But since there are so much that it's very hard to find the right one, I'd like to suggestion you the one I'm using: It's part of a theme called "native-ui" (which was created by [@fv0][1]) and you can download it [here][2].
 
-### Customize
-
-It's also possible to resize only certain areas by adding the following to your `styles.less` (Use the DevTools to find the right selectors):
-
-```css
-.theme-one-dark-ui {
-  .tab-bar { font-size: 18px; }
-  .tree-view { font-size: 14px; }
-  .status-bar { font-size: 12px; }
-}
-```
-
-### FAQ
-
-__Why do the colors change when I switch Syntax themes?__
-This UI theme uses the same background color as the choosen Syntax theme. In case that Syntax theme has a light background color, it only uses its hue, but otherwise stays dark. This lets you use dark-light combos.
+[1]: https://github.com/fv0
+[2]: https://github.com/fv0/native-ui/raw/master/Atom.icns
