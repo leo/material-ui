@@ -1,7 +1,5 @@
 @tab-border-size: 1px;
 @tab-border: @tab-border-size solid @tab-border-color;
-@tab-max-width: @ui-size*22;
-@tab-min-width: @ui-size*7; // icon + 5 characters
 @tab-padding: @ui-padding/1.5;
 @modified-icon-width: @ui-size;
 
@@ -19,9 +17,11 @@
   .tab {
     position: relative;
     top: 0;
-    max-width: @tab-max-width;
-    min-width: @tab-min-width;
+    max-width: none;
+    min-width: 180px;
+    display: inline-block;
     height: 45px;
+    flex: 0;
     font-size: inherit;
     color: @tab-text-color;
     line-height: 45px;
@@ -33,6 +33,7 @@
     &.active {
       border-radius: 0;
       background-color: @level-3-color;
+      flex: 0;
     }
 
     &:hover {
@@ -40,7 +41,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       z-index: 1;
       position: absolute;
       top: 0;
@@ -80,20 +81,14 @@
       -webkit-mask-position: -@modified-icon-width 0;
     }
 
-    &.active .title {
-      background-color: transparent !important;
-    }
-
     .close-icon {
       top: 0;
       right: 0;
       z-index: 2;
       padding: 0 @tab-padding/1.25;
-      height: @ui-tab-height;
-      line-height: @ui-tab-height;
+      height: 45px;
+      line-height: 45px;
       text-align: center;
-      transform: scale(0);
-      transition: transform .08s;
 
       &:hover {
         opacity: .7;
@@ -114,11 +109,6 @@
       transition-duration: .16s;
     }
 
-  }
-
-  .tab,
-  .tab.active {
-    flex: 1;
   }
 
   .tab,
