@@ -4,9 +4,6 @@
   "version": "0.1.0",
   "description": "A modern UI based on Google's Material design guide",
   "keywords": [
-    "dark",
-    "adaptive",
-    "ui",
     "material",
     "design"
   ],
