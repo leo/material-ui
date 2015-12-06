@@ -14,5 +14,10 @@ If you don't like Atom's default dock icon, there are many different alternative
 
 But since there are so much that it's very hard to find the right one, I'd like to suggestion you the one I'm using: It's part of a theme called "native-ui" (which was created by [@fv0][1]) and you can download it [here][2].
 
+### :crown:
+
+This theme was inspired by Mattia Astorino's awesome [material-theme][3] for Sublime Text.
+
 [1]: https://github.com/fv0
 [2]: https://github.com/fv0/native-ui/raw/master/Atom.icns
+[3]: https://github.com/equinusocio/material-theme
