@@ -1,8 +1,5 @@
-
-// ONE dark UI variables
-// ----------------------------------------------
-
 @import "syntax-variables";
+
 .ui-syntax-color() { @syntax-background-color: hsl(220,24%,20%); } .ui-syntax-color(); // fallback color
 @ui-syntax-color: @syntax-background-color;
 
@@ -80,8 +77,8 @@
 @pane-item-background-color:       @level-3-color;
 @pane-item-border-color:           @base-border-color;
 
-@input-background-color:           darken(@base-background-color, 6%);
-@input-border-color:               @base-border-color;
+@input-background-color:           @level-3-color;
+@input-border-color:               #212B31;
 
 @tool-panel-background-color:      @level-3-color;
 @tool-panel-border-color:          @base-border-color;
@@ -202,7 +199,7 @@
 // Sizes (Custom) -----------------
 
 @ui-size:                 1em;
-@ui-input-size:           @ui-size*1.15;
+@ui-input-size:           12px;
 @ui-padding:              @ui-size*1.5;
 @ui-padding-pane:         @ui-size*.5;
 @ui-padding-icon:         @ui-padding/3.3;
