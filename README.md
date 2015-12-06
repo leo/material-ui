@@ -2,10 +2,11 @@
 
 This theme converts Atom into a good looking and minimal editor without unnecessary clutter. Although it was inspired by Google's Material design, it's not completely based on the same. There are some places in which I've decided to make some decisions by my own to make the design look less haptic.
 
+![Theme with code](/../screenshots/with-code.png?raw=true)
+
 ### Install
 
 Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme".
-
 
 ### Dock icon
 
