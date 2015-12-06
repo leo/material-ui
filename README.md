@@ -8,6 +8,8 @@ This theme converts Atom into a good looking and minimal editor without unnecess
 
 Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme".
 
+By the way, the theme should be used with Atom's default syntax theme called "One Dark". I'm still working on a special one just for the use with this UI.
+
 ### Dock icon
 
 If you don't like Atom's default dock icon, there are many different alternatives out there from which you can choose one that you like more.
