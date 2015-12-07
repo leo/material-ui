@@ -81,6 +81,7 @@
 
   .icon-file-directory {
     font-weight: 600;
+    position: relative;
 
     &:before {
       content: '\E2C7';
@@ -92,6 +93,19 @@
       top: -2px;
       margin-right: 9px;
       opacity: .6;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      top: 8px;
+      left: 3px;
+      width: 13px;
+      height: 8px;
+      background: @level-3-color;
+      position: absolute;
+      transition: transform 100ms;
+      transform: scale(0);
     }
 
   }
@@ -137,13 +151,22 @@
 
   }
 
-  .expanded > .list-item > .icon,
-  .icon:hover {
-    color: #7DCBC4;
+  .entries {
 
-    &:before {
-      opacity: 1;
+    .directory > .list-item > .icon:hover {
+      color: #7DCBC4;
+
+      &:before {
+        opacity: 1;
+      }
+
     }
+
+    .expanded > .list-item > .icon:after {
+      transition: transform 250ms;
+      transform: scale(1);
+    }
+
   }
 
 }
