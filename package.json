@@ -5,11 +5,12 @@
   "description": "Makes your editor a lot more spacious",
   "keywords": [
     "material",
-    "design"
+    "design",
+    "space"
   ],
   "license": "MIT",
   "repository": "https://github.com/leo/material-ui",
   "engines": {
-    "atom": ">=1.2.0"
+    "atom": ">0.40.0"
   }
 }
