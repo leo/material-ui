@@ -104,6 +104,30 @@
 		padding-bottom: 0;
 	}
 
+	select.form-control {
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+		border-bottom: 1px solid @input-border-color;
+		cursor: pointer;
+		-webkit-appearance: none;
+		border-radius: 0;
+		margin-top: 20px;
+		padding: 5px 0 5px;
+		box-sizing: content-box;
+
+		&:hover,
+		&:focus {
+			background: transparent;
+		}
+
+		&:focus {
+			border-color: #7DCBC4;
+			box-shadow: 0 1px 0 #7DCBC4;
+		}
+
+	}
+
 	.update-all-button {
 		font-size: .75em;
 	}
