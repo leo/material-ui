@@ -1,0 +1,1 @@
+This branch contains screenshots that are used to preview the theme's look. I didn't want to add them to the downloadable package because I wanted to save bandwidth (this is for you, traveling guys on a mobile hotspot). So I've decided to create a new branch for them.
