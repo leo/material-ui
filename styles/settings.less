@@ -105,7 +105,6 @@
 	}
 
 	select.form-control {
-		background: transparent;
 		border: 0;
 		box-shadow: none;
 		border-bottom: 1px solid @input-border-color;
@@ -115,10 +114,11 @@
 		margin-top: 20px;
 		padding: 5px 0 5px;
 		box-sizing: content-box;
+		background: url(atom://material-ui/vectors/caret.svg) no-repeat center right;
 
 		&:hover,
 		&:focus {
-			background: transparent;
+			background-color: transparent;
 		}
 
 		&:focus {
