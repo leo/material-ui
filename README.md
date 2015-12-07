@@ -2,7 +2,9 @@
 
 This theme converts Atom into a good looking and minimal editor without unnecessary clutter. Although it was inspired by Google's Material design, it's not completely based on the same. There are some places in which I've decided to make some decisions by my own to make the design look less haptic.
 
-![Theme with code](https://raw.githubusercontent.com/leo/material-ui/screenshots/with-code.png)
+<a href="https://raw.githubusercontent.com/leo/material-ui/screenshots/with-code.png" target="_blank">
+  <img src="https://raw.githubusercontent.com/leo/material-ui/screenshots/with-code.png">
+</a>
 
 ### Install
 
