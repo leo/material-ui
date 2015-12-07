@@ -79,33 +79,23 @@
 
 .list-tree {
 
+  .icon:before {
+    margin-right: 9px;
+  }
+
   .icon-file-directory {
     font-weight: 600;
     position: relative;
 
     &:before {
+      &:extend(.material-icon);
       content: '\E2C7';
-      font-family: 'Material Icons';
       display: inline-block;
       font-size: 19.2px;
       vertical-align: middle;
-      -webkit-font-smoothing: auto;
       top: -2px;
       margin-right: 9px;
       opacity: .6;
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      top: 8px;
-      left: 3px;
-      width: 13px;
-      height: 8px;
-      background: @level-3-color;
-      position: absolute;
-      transition: transform 100ms;
-      transform: scale(0);
     }
 
   }
@@ -120,6 +110,13 @@
 
     }
 
+  }
+
+  .icon-repo:before {
+    &:extend(.material-icon);
+    content: '\E2C7';
+    font-size: 19.2px;
+    display: inline-block;
   }
 
 }
@@ -166,11 +163,6 @@
 
     }
 
-    .expanded > .list-item > .icon:after {
-      transition: transform 250ms;
-      transform: scale(1);
-    }
-
   }
 
 }
@@ -184,6 +176,42 @@
       background: @level-3-color;
       z-index: 100;
       position: relative;
+    }
+
+  }
+
+  .icon-repo,
+  .icon-file-directory {
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      top: 8px;
+      left: 3px;
+      width: 13px;
+      height: 8px;
+      background: @level-3-color;
+      position: absolute;
+      transition: transform 100ms;
+      transform: scale(0);
+    }
+
+  }
+
+  .project-root > .list-item .icon {
+    
+    &:after {
+      top: 14px;
+    }
+
+  }
+
+  .entry.expanded {
+
+    > .list-item > .icon:after {
+      transition: transform 250ms;
+      transform: scale(1);
     }
 
   }
