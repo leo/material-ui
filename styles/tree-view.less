@@ -243,6 +243,11 @@
   .entry.expanded > .entries {
     -webkit-animation: tree-view-expanded .3s ease;
     z-index: 10;
+
+    &:empty {
+      display: none;
+    }
+
   }
 
   @keyframes tree-view-expanded {
