@@ -132,7 +132,7 @@
   }
 
   .file:hover .icon {
-    color: #7DCBC4;
+    color: #A9BDC4;
   }
 
   .status-modified {
@@ -154,7 +154,19 @@
       padding-bottom: 1px;
 
       &.selected {
-        color: #A9BDBE;
+        color: #fff;
+
+        &:before {
+          background: #89C540;
+          width: 2px;
+          left: 2px;
+          transform: scaleY(.78);
+        }
+
+        &:hover .icon {
+          color: inherit;
+        }
+
       }
 
     }
