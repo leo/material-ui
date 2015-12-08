@@ -92,8 +92,6 @@
       content: '\E2C7';
       display: inline-block;
       font-size: 19.2px;
-      vertical-align: middle;
-      top: -2px;
       margin-right: 9px;
       opacity: .6;
     }
@@ -117,6 +115,16 @@
     content: '\E2C7';
     font-size: 19.2px;
     display: inline-block;
+  }
+
+  .icon-repo,
+  .icon-file-directory {
+
+    &:before {
+      vertical-align: middle;
+      top: -1px;
+    }
+
   }
 
 }
@@ -173,15 +181,12 @@
 
   }
 
-  .entries {
+  .directory > .list-item > .icon:hover,
+  .directory.expanded > .list-item > .icon {
+    color: #7DCBC4;
 
-    .directory > .list-item > .icon:hover {
-      color: #7DCBC4;
-
-      &:before {
-        opacity: 1;
-      }
-
+    &:before {
+      opacity: 1;
     }
 
   }
@@ -208,7 +213,7 @@
     &:after {
       content: '';
       display: block;
-      top: 8px;
+      top: 9px;
       left: 3px;
       width: 13px;
       height: 8px;
@@ -223,7 +228,7 @@
   .project-root > .list-item .icon {
 
     &:after {
-      top: 14px;
+      top: 19px;
     }
 
   }
