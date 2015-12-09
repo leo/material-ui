@@ -31,23 +31,22 @@ atom-workspace {
 .scrollbars-visible-always {
 
 	/deep/ ::-webkit-scrollbar {
-		width: 10px;
-		height: 10px;
+		width: 8px;
+		height: 8px;
 	}
 
 	/deep/ ::-webkit-scrollbar-track {
-		background: @scrollbar-background-color;
+		background: #36474F;
 	}
 
 	/deep/ ::-webkit-scrollbar-thumb {
-		border-radius: 5px;
-		border: 3px solid @scrollbar-background-color;
-		background: @scrollbar-color;
+		border-radius: 10px;
+		background: #36474F;
 		background-clip: content-box;
 	}
 
 	/deep/ ::-webkit-scrollbar-corner {
-		background: @scrollbar-background-color;
+		background: #36474F;
 	}
 
 	/deep/ ::-webkit-scrollbar-thumb:vertical:active {
@@ -65,16 +64,15 @@ atom-workspace {
 	atom-text-editor {
 
 		/deep/ ::-webkit-scrollbar-track {
-			background: @scrollbar-background-color-editor;
+			background: @level-3-color;
 		}
 
 		/deep/ ::-webkit-scrollbar-corner {
-			background: @scrollbar-background-color-editor;
+			background: #36474F;
 		}
 
 		/deep/ ::-webkit-scrollbar-thumb {
-			border-color: @scrollbar-background-color-editor;
-			background: @scrollbar-color-editor;
+			background: #36474F;
 		}
 
 	}
@@ -84,4 +82,17 @@ atom-workspace {
 .caret {
   border-top: 5px solid #fff;
   margin-top: -1px;
+}
+
+.scrollbars-visible-when-scrolling {
+
+  /deep/ ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb {
+    background: #36474F;
+    border-radius: 10px;
+  }
+
 }
