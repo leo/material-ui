@@ -12,6 +12,31 @@ Simply go to the __Settings > Install__ section, click the "Themes" tab and sear
 
 By the way, the theme should be used with Atom's default syntax theme called "One Dark". I'm still working on a special one just for the use with this UI.
 
+### Develop
+
+To help with the development of this theme, simply follow these steps:
+
+Clone this repo
+
+```shell
+$ git clone https://github.com/leo/material-ui
+$ cd material-ui
+```
+
+Open Atom in development mode
+
+```shell
+$ atom --dev .
+```
+
+Add the theme to `~/.atom/packages`
+
+```shell
+$ apm link
+```
+
+Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use `cmd-alt-ctrl-L` to reload Atom completely. 
+
 ### Dock icon
 
 If you don't like Atom's default dock icon, there are many different alternatives out there from which you can choose one that you like more.
