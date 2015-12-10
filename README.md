@@ -16,13 +16,18 @@ $ apm install material-ui
 
 By the way, the theme should be used together with the syntax theme [material-syntax][1]. I'm still working on a special one just for the use with this UI.
 
-### Develop
+### Contribute
 
-To help with the development of this theme, simply follow these steps:
+If you already have the theme installed, remove it
+
+```shell
+$ apm uninstall material-ui
+```
 
 Clone this repo
 
 ```shell
+
 $ git clone https://github.com/leo/material-ui
 $ cd material-ui
 ```
