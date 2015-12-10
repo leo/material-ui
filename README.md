@@ -39,19 +39,22 @@ Add the theme to `~/.atom/packages`
 $ apm link
 ```
 
-Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use `cmd-alt-ctrl-L` to reload Atom completely. 
+Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use `cmd-alt-ctrl-L` to reload Atom completely.
+
+Read more about the development workflow [here][2].
 
 ### Dock icon
 
 If you don't like Atom's default dock icon, there are many different alternatives out there from which you can choose one that you like more.
 
-But since there are so much that it's very hard to find the right one, I'd like to suggestion you the one I'm using: It's part of a theme called "native-ui" (which was created by [@fv0][2]) and you can download it [here][3].
+But since there are so much that it's very hard to find the right one, I'd like to suggestion you the one I'm using: It's part of a theme called "native-ui" (which was created by [@fv0][3]) and you can download it [here][4].
 
 ### :crown:
 
-This theme was inspired by Mattia Astorino's awesome [material-theme][4] for Sublime Text.
+This theme was inspired by Mattia Astorino's awesome [material-theme][5] for Sublime Text.
 
 [1]: https://atom.io/themes/material-syntax
-[2]: https://github.com/fv0
-[3]: https://github.com/fv0/native-ui/raw/master/Atom.icns
-[4]: https://github.com/equinusocio/material-theme
+[2]: https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow
+[3]: https://github.com/fv0
+[4]: https://github.com/fv0/native-ui/raw/master/Atom.icns
+[5]: https://github.com/equinusocio/material-theme
