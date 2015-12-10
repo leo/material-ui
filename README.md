@@ -8,13 +8,13 @@ This theme converts Atom into a good looking and minimal editor without unnecess
 
 ### Install
 
-Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme". Or simply fire up a terminal and type in the following to have it installed automatically:
+Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme". Or fire up a terminal and type in the following to have it installed automatically:
 
 ```
 $ apm install material-ui
 ```
 
-By the way, the theme should be used together with the syntax theme [material-syntax][1]. I'm still working on a special one just for the use with this UI.
+By the way, the UI theme should be used together with the syntax theme [material-syntax][1]. I'm still working on a special one just for the use with this UI.
 
 I'm also suggesting you to enable `Use Preview Tabs` within the "Tabs" core package. This will improve your experience with the theme a lot.
 
@@ -48,7 +48,7 @@ $ apm link
 
 Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use `cmd-alt-ctrl-L` to reload Atom completely.
 
-Read more about the development workflow [here][2].
+[Read more][2] about the development workflow.
 
 ### Dock icon
 
