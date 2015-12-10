@@ -9,6 +9,8 @@
   overflow-x: auto;
   overflow-y: hidden;
   border-radius: 0;
+  display: block;
+  white-space: nowrap;
 
   &::-webkit-scrollbar {
     display: none;
@@ -21,7 +23,6 @@
     min-width: 180px;
     display: inline-block;
     height: 45px;
-    flex: 0;
     font-size: inherit;
     color: @tab-text-color;
     line-height: 45px;
@@ -33,7 +34,6 @@
     &.active {
       border-radius: 0;
       background-color: @level-3-color;
-      flex: 0;
     }
 
     &:hover {
@@ -65,8 +65,7 @@
       text-align: left;
       border-bottom: @tab-border-size solid transparent;
       text-overflow: clip;
-      margin-left: 20px;
-      -webkit-mask: linear-gradient( to left, hsla(0,0%,0%,0), hsla(0,0%,0%,1) 1em) no-repeat;
+      margin: 0 35px 0 20px;
       background-clip: content-box;
       backface-visibility: hidden;
       font-size: 11px;
