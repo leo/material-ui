@@ -16,6 +16,8 @@ $ apm install material-ui
 
 By the way, the theme should be used together with the syntax theme [material-syntax][1]. I'm still working on a special one just for the use with this UI.
 
+I'm also suggesting you to enable `Use Preview Tabs` within the "Tabs" core package. This will improve your experience with the theme a lot.
+
 ### Contribute
 
 If you already have the theme installed, remove it
