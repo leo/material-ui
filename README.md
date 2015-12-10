@@ -8,7 +8,11 @@ This theme converts Atom into a good looking and minimal editor without unnecess
 
 ### Install
 
-Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme".
+Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme". Or simply fire up a terminal and type in the following to have it installed automatically:
+
+```
+$ apm install material-ui
+```
 
 By the way, the theme should be used together with the syntax theme [material-syntax][1]. I'm still working on a special one just for the use with this UI.
 
