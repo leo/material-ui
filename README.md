@@ -29,7 +29,6 @@ $ apm uninstall material-ui
 Clone this repo
 
 ```shell
-
 $ git clone https://github.com/leo/material-ui
 $ cd material-ui
 ```
