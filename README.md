@@ -45,7 +45,7 @@ Add the theme to `~/.atom/packages`
 $ apm link
 ```
 
-Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use `cmd-alt-ctrl-L` to reload Atom completely.
+Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>ctrl</kbd> + <kbd>L</kbd> to reload Atom completely.
 
 [Read more][2] about the development workflow.
 
