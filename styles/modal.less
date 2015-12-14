@@ -1,4 +1,3 @@
-
 @modal-padding: @ui-padding/2 @ui-padding/1.5;
 @modal-width: @ui-size * 50;
 
@@ -39,17 +38,22 @@ atom-panel.modal {
       .icon.status {
         float: right;
         margin-left: @ui-padding-icon;
+
         &:before {
           margin-left: 0;
           margin-right: 0;
         }
+
       }
 
       &.selected {
+
         .status.icon {
           color: @text-color-selected;
         }
+
       }
+
     }
 
   }
@@ -65,11 +69,9 @@ atom-panel.modal {
   }
 
   & > * {
-    position: relative; // fixes stacking order
+    position: relative;
   }
 
-
-  // Container
   &:before {
     content: "";
     position: absolute;
@@ -84,11 +86,8 @@ atom-panel.modal {
     box-shadow: 0 6px 12px -2px hsla(0,0%,0%,.4);
   }
 
-  // Backdrop
-  // TODO: Add extra wrapper to translate individually or easier positioning
-
   &:after {
-    content: "";
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
@@ -96,13 +95,20 @@ atom-panel.modal {
     bottom: 0;
     z-index: -1;
     background: @overlay-backdrop-color;
-    backface-visibility: hidden; // fixes scrollbar on retina screens
+    backface-visibility: hidden;
     -webkit-animation: overlay-fade .1s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   @-webkit-keyframes overlay-fade {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+
   }
 
 }

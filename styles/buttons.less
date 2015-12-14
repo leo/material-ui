@@ -1,8 +1,5 @@
-
 @btn-border: 1px solid @button-border-color;
 @btn-padding: 0 @ui-size/1.25;
-
-// Mixins -----------------------
 
 .btn-default (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
@@ -12,40 +9,46 @@
   background-image: linear-gradient(lighten(@color, 2%), @color);
 
   &:focus {
-    //.focus(); // disabled for now, since :focus styles stay even after releasing mouse.
     outline: none;
   }
+
   &:focus,
   &:hover {
     color: @text-color-highlight;
     background-image: linear-gradient(lighten(@hover-color, 2%), @hover-color);
   }
+
   &:active {
     background: darken(@color, 4%);
     box-shadow: none;
   }
+
   &.selected {
     background: @selected-color;
   }
+
   &.selected:focus,
   &.selected:hover {
     background: lighten(@selected-color, 2%);
   }
+
 }
 
 .btn-variant (@color) {
   @_text-color: contrast(@color, hsl(0,0%,25%), white, 70% );
+
   .btn-default(
     @color,
     lighten(@color, 3%),
     saturate(darken(@color, 12%), 20%),
     @text-color-highlight
   );
+
   color: @_text-color;
   text-shadow: 0 1px 0 hsla(0,0%,0%,.2);
 
   & when (@ui-lightness > 50%) {
-    border-color: transparent; // hide border on light backgrounds
+    border-color: transparent;
   }
 
   &:hover,
@@ -56,10 +59,8 @@
   &.icon:before {
     color: @_text-color;
   }
+
 }
-
-
-// Buttons -----------------------
 
 .btn {
   height: initial;
@@ -70,27 +71,33 @@
 
 .btn,
 .btn.btn-default {
-  .btn-default(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
+  .btn-default(
+    @button-background-color,
+    @button-background-color-hover,
+    @button-background-color-selected,
+    @text-color
+  );
 }
 
 .btn.btn-primary {
   .btn-variant(@base-accent-color);
 }
+
 .btn.btn-info {
   .btn-variant(@background-color-info);
 }
+
 .btn.btn-success {
   .btn-variant(@background-color-success);
 }
+
 .btn.btn-warning {
   .btn-variant(@background-color-warning);
 }
+
 .btn.btn-error {
   .btn-variant(@background-color-error);
 }
-
-
-// Button Sizes -----------------------
 
 .btn.btn-xs,
 .btn-group-xs > .btn {
@@ -98,21 +105,20 @@
   line-height: @ui-line-height;
   padding: @btn-padding;
 }
+
 .btn.btn-sm,
 .btn-group-sm > .btn {
   font-size: @ui-size*.9;
   line-height: @ui-line-height;
   padding: @btn-padding;
 }
+
 .btn.btn-lg,
 .btn-group-lg > .btn {
   font-size: @ui-size * 1.5;
   line-height: @ui-line-height;
   padding: @btn-padding;
 }
-
-
-// Button Group -----------------------
 
 .btn-group > .btn {
   z-index: 0;
@@ -123,12 +129,13 @@
   &:first-child {
     border-left: @btn-border;
   }
+
   &:last-child {
     border-right: @btn-border;
   }
 
-  // hide border on light backgrounds
   & when (@ui-lightness > 50%) {
+
     &.btn-primary:first-child,
     &.btn-info:first-child,
     &.btn-success:first-child,
@@ -144,6 +151,7 @@
     &.btn-error:last-child {
       border-right-color: transparent;
     }
+
   }
 
   &.btn:focus {
@@ -156,13 +164,12 @@
     color: @button-text-color-selected;
     border: 1px solid @button-border-color-selected;
   }
+
   &.selected + .btn {
     border-left-color: @button-border-color-selected;
   }
+
 }
-
-
-// Button Icons -----------------------
 
 .btn.icon:before {
   line-height: inherit;
