@@ -14,7 +14,7 @@ Simply go to the __Settings > Install__ section, click the "Themes" tab and sear
 apm install material-ui
 ```
 
-By the way, the UI theme should be used together with the syntax theme [material-syntax][1]. I'm still working on a special one just for the use with this UI.
+By the way, the UI theme should be used together with the syntax theme [material-syntax][1] and the [file-icons][2]. I'm still working on a special syntax theme just for the use with this UI.
 
 I'm also suggesting you to enable `Use Preview Tabs` within the "Tabs" core package. This will improve your experience with the theme a lot.
 
@@ -47,20 +47,21 @@ apm link
 
 Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>ctrl</kbd> + <kbd>L</kbd> to reload Atom completely.
 
-[Read more][2] about the development workflow.
+[Read more][3] about the development workflow.
 
 ### Dock icon
 
 If you don't like Atom's default dock icon, there are many different alternatives out there from which you can choose one that you like more.
 
-But since there are so much that it's very hard to find the right one, I'd like to suggestion you the one I'm using: It's part of a theme called "native-ui" (which was created by [@fv0][3]) and you can download it [here][4].
+But since there are so much that it's very hard to find the right one, I'd like to suggest you the one I'm using: It's part of a theme called "native-ui" (which was created by [@fv0][4]) and you can download it [here][5].
 
 ### :crown:
 
-This theme was inspired by Mattia Astorino's awesome [material-theme][5] for Sublime Text.
+This theme was inspired by Mattia Astorino's awesome [material-theme][6] for Sublime Text.
 
 [1]: https://atom.io/themes/material-syntax
-[2]: https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow
-[3]: https://github.com/fv0
-[4]: https://github.com/fv0/native-ui/raw/master/Atom.icns
-[5]: https://github.com/equinusocio/material-theme
+[2]: https://atom.io/packages/file-icons
+[3]: https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow
+[4]: https://github.com/fv0
+[5]: https://github.com/fv0/native-ui/raw/master/Atom.icns
+[6]: https://github.com/equinusocio/material-theme
