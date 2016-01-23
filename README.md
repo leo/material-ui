@@ -49,19 +49,11 @@ Now enable the theme using the drop-down in the "Themes" section of Atom's setti
 
 [Read more][3] about the development workflow.
 
-### Dock icon
-
-If you don't like Atom's default dock icon, there are many different alternatives out there from which you can choose one that you like more.
-
-But since there are so much that it's very hard to find the right one, I'd like to suggest you the one I'm using: It's part of a theme called "native-ui" (which was created by [@fv0][4]) and you can download it [here][5].
-
 ### :crown:
 
-This theme was inspired by Mattia Astorino's awesome [material-theme][6] for Sublime Text.
+This theme was inspired by Mattia Astorino's awesome [material-theme][5] for Sublime Text.
 
 [1]: https://atom.io/themes/material-syntax
 [2]: https://atom.io/packages/file-icons
 [3]: https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow
-[4]: https://github.com/fv0
-[5]: https://github.com/fv0/native-ui/raw/master/Atom.icns
-[6]: https://github.com/equinusocio/material-theme
+[5]: https://github.com/equinusocio/material-theme
