@@ -14,7 +14,7 @@ Simply go to the __Settings > Install__ section, click the "Themes" tab and sear
 apm install material-ui
 ```
 
-By the way, the UI theme should be used together with the syntax theme [material-syntax][1] and the [file-icons][2]. I'm still working on a special syntax theme just for the use with this UI.
+By the way, the UI theme should be used together with the syntax theme [One Dark][1] (which is already installed by default) and [File Icons][2]. I'm still working on a special syntax theme just for the use with this UI.
 
 I'm also suggesting you to enable `Use Preview Tabs` within the "Tabs" core package. This will improve your experience with the theme a lot.
 
@@ -53,7 +53,7 @@ Now enable the theme using the drop-down in the "Themes" section of Atom's setti
 
 This theme was inspired by Mattia Astorino's awesome [material-theme][5] for Sublime Text.
 
-[1]: https://atom.io/themes/material-syntax
+[1]: https://atom.io/themes/one-dark-syntax
 [2]: https://atom.io/packages/file-icons
 [3]: https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow
 [5]: https://github.com/equinusocio/material-theme
