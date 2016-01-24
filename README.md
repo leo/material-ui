@@ -14,7 +14,7 @@ Simply go to the __Settings > Install__ section, click the "Themes" tab and sear
 apm install material-ui
 ```
 
-By the way, the UI theme should be used together with the syntax theme [One Dark][1] (which is already installed by default) and [File Icons][2]. I'm still working on a special syntax theme just for the use with this UI.
+By the way, the UI theme should be used together with the syntax theme [One Dark][1] (which is already installed by default) and [File Icons][2]. Using those packages, you'll get the best experience.
 
 I'm also suggesting you to enable `Use Preview Tabs` within the "Tabs" core package. This will improve your experience with the theme a lot.
 
