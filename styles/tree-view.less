@@ -13,7 +13,6 @@
     }
 
     &:before {
-      height: @ui-tab-height;
       background-clip: padding-box;
     }
 
@@ -150,7 +149,27 @@
 
   }
 
-  .list-item {
+  .list-nested-item {
+
+  }
+
+  .list-item, .list-nested-item {
+    &.selected {
+      color: #fff;
+
+      &:before {
+        background: #89C540;
+        width: 2px;
+        left: 2px;
+        transform: scaleY(.78);
+      }
+
+      &:hover .icon {
+        color: inherit;
+      }
+
+    }
+
 
     &.file {
       font-size: 11.5px;
@@ -158,23 +177,6 @@
       color: #607B82;
       padding-top: 1px;
       padding-bottom: 1px;
-
-      &.selected {
-        color: #fff;
-
-        &:before {
-          background: #89C540;
-          width: 2px;
-          left: 2px;
-          transform: scaleY(.78);
-        }
-
-        &:hover .icon {
-          color: inherit;
-        }
-
-      }
-
     }
 
   }
