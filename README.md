@@ -33,16 +33,16 @@ git clone https://github.com/leo/material-ui
 cd material-ui
 ```
 
-Open Atom in development mode
-
-```shell
-atom --dev .
-```
-
 Add the theme to `~/.atom/packages`
 
 ```shell
 apm link
+```
+
+Open Atom in development mode
+
+```shell
+atom --dev .
 ```
 
 Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>ctrl</kbd> + <kbd>L</kbd> to reload Atom completely.
