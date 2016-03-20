@@ -11,6 +11,6 @@
   "license": "MIT",
   "repository": "https://github.com/leo/material-ui",
   "engines": {
-    "atom": ">0.40.0"
+    "atom": ">1.6.0"
   }
 }
