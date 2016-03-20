@@ -1,7 +1,7 @@
 {
   "name": "material-ui",
   "theme": "ui",
-  "version": "1.0.8",
+  "version": "1.0.7",
   "description": "A minimal UI inspired by Google's Material design guide",
   "keywords": [
     "material",
