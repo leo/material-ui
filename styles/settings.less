@@ -15,8 +15,8 @@
     min-width: @ui-size * 15;
     max-width: @ui-size * 20;
     border-width: 0 1px 0 0;
-    border-image: linear-gradient(@level-3-color 10px, #212B31 200px) 0 1 0 0 stretch;
     background: @level-3-color;
+    border-color: #252627;
 
     .btn {
       white-space: initial;
@@ -138,6 +138,10 @@
 
   atom-text-editor[mini] {
     margin: 15px 0 35px 0;
+  }
+
+  div > section.section.settings-panel {
+    border-top-color: #252627;
   }
 
 }
