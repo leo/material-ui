@@ -59,7 +59,11 @@
   .section,
   .section:first-child,
   .section:last-child {
-    padding: 20px @ui-padding*3 @ui-padding*3;
+    padding: @ui-padding*3 @ui-padding*3 @ui-padding*3;
+  }
+
+  .general-panel + .section {
+    padding-top: @ui-padding*2;
   }
 
   .themes-panel .control-group {
