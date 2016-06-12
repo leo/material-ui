@@ -8,6 +8,11 @@
     "design",
     "space"
   ],
+  "author": {
+    "name": "Leo Lamprecht",
+    "email": "mindrun@icloud.com",
+    "url": "http://leo.im"
+  },
   "license": "MIT",
   "repository": "https://github.com/leo/material-ui",
   "engines": {
