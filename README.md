@@ -1,4 +1,4 @@
-## Material UI
+# Material UI [![Beerpay](https://beerpay.io/leo/material-ui/badge.svg?style=flat)](https://beerpay.io/leo/material-ui)
 
 This theme converts Atom into a good looking and minimal editor without unnecessary clutter. Although it was inspired by Google's Material design, it's not completely based on the same. There are some places in which I've decided to make some decisions by my own to make the design look less haptic.
 
