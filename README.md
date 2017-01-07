@@ -10,7 +10,7 @@ This theme converts Atom into a good looking and minimal editor without unnecess
 
 Simply go to the __Settings > Install__ section, click the "Themes" tab and search for "material-ui". After installing it, you only need to activate it within the __Settings > Themes__ section under "UI Theme". Or fire up a terminal and type in the following to have it installed automatically:
 
-```
+```bash
 apm install material-ui
 ```
 
@@ -20,28 +20,28 @@ I'm also suggesting you to enable `Use Preview Tabs` within the "Tabs" core pack
 
 ### Contribute
 
-If you already have the theme installed, remove it
+If you already have the theme installed, remove it:
 
-```shell
+```bash
 apm uninstall material-ui
 ```
 
-Clone this repo
+Clone this repo:
 
-```shell
+```bash
 git clone https://github.com/leo/material-ui
 cd material-ui
 ```
 
-Add the theme to `~/.atom/packages`
+Add the theme to `~/.atom/packages`:
 
-```shell
+```bash
 apm link
 ```
 
 Open Atom in development mode
 
-```shell
+```bash
 atom --dev .
 ```
 
