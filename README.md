@@ -14,7 +14,7 @@ Simply go to the __Settings > Install__ section, click the "Themes" tab and sear
 apm install material-ui
 ```
 
-By the way, the UI theme should be used together with the syntax theme [One Dark][1] (which is already installed by default) and [File Icons][2]. Using those packages, you'll get the best experience.
+By the way, the UI theme should be used together with the syntax theme [One Dark](https://atom.io/themes/one-dark-syntax) (which is already installed by default) and [File Icons](https://atom.io/packages/file-icons). Using those packages, you'll get the best experience.
 
 I'm also suggesting you to enable `Use Preview Tabs` within the "Tabs" core package. This will improve your experience with the theme a lot.
 
@@ -47,17 +47,12 @@ atom --dev .
 
 Now enable the theme using the drop-down in the "Themes" section of Atom's settings and start making changes. Although the theme will automatically get updated if you make changes, you can use <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>ctrl</kbd> + <kbd>L</kbd> to reload Atom completely.
 
-[Read more][3] about the development workflow.
+[Read more](https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow) about the development workflow.
 
 ### Credits
 
-This theme was inspired by Mattia Astorino's awesome [material-theme][5] for Sublime Text.
+This theme was inspired by Mattia Astorino's awesome [material-theme][https://github.com/equinusocio/material-theme] for Sublime Text.
 
 ## Author
 
 Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo))
-
-[1]: https://atom.io/themes/one-dark-syntax
-[2]: https://atom.io/packages/file-icons
-[3]: https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow
-[5]: https://github.com/equinusocio/material-theme
