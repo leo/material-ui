@@ -53,6 +53,10 @@ Now enable the theme using the drop-down in the "Themes" section of Atom's setti
 
 This theme was inspired by Mattia Astorino's awesome [material-theme][5] for Sublime Text.
 
+## Author
+
+Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo))
+
 [1]: https://atom.io/themes/one-dark-syntax
 [2]: https://atom.io/packages/file-icons
 [3]: https://atom.io/docs/latest/hacking-atom-creating-a-theme#development-workflow
