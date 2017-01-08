@@ -49,7 +49,7 @@ Now enable the theme using the drop-down in the "Themes" section of Atom's setti
 
 [Read more][3] about the development workflow.
 
-### :crown:
+### Credits
 
 This theme was inspired by Mattia Astorino's awesome [material-theme][5] for Sublime Text.
 
