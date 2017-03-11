@@ -1,7 +1,7 @@
 atom-text-editor {
   background: @level-3-color;
 
-  &::shadow .line-number {
+  &.editor .line-number {
     padding-left: 1em;
   }
 
@@ -38,7 +38,7 @@ atom-text-editor[mini] {
   }
 
   &,
-  &::shadow {
+  &.editor {
 
     .placeholder-text {
       color: @text-color-subtle;
@@ -56,7 +56,7 @@ atom-text-editor[mini] {
   }
 
   &.is-focused,
-  &.is-focused::shadow {
+  &.is-focused.editor {
     .focus();
     box-shadow: none;
     border-color: transparent;
